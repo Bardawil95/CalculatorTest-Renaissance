@@ -427,3 +427,15 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# Angular
+CalculatorUI/node_modules/
+CalculatorUI/dist/
+CalculatorUI/.angular/
+CalculatorUI/npm-debug.log
+CalculatorUI/yarn-error.log
+CalculatorUI/package-lock.json
+
+# Environment files
+CalculatorUI/.env
+CalculatorUI/.env.local
