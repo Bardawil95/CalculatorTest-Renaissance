@@ -6,13 +6,17 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<ISimpleCalculator, SimpleCalculator>();
 
 // CORS for local development
+// NEW (allows any localhost port)
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("DevCorsPolicy", policy =>
     {
-        policy.WithOrigins("http://localhost:4200")
+        policy.SetIsOriginAllowed(origin =>
+                origin.StartsWith("http://localhost") ||
+                origin.StartsWith("https://localhost"))
               .AllowAnyMethod()
-              .AllowAnyHeader();
+              .AllowAnyHeader()
+              .AllowCredentials();
     });
 });
 

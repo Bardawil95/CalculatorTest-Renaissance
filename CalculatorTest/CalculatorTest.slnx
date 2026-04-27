@@ -2,4 +2,8 @@
   <Project Path="Calculator.Api/Calculator.Api.csproj" />
   <Project Path="Calculator.Core/Calculator.Core.csproj" />
   <Project Path="Calculator.Tests/Calculator.Tests.csproj" />
+  <Project Path="CalculatorUI/CalculatorUI.esproj">
+    <Build />
+    <Deploy />
+  </Project>
 </Solution>
