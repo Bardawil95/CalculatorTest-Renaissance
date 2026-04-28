@@ -15,6 +15,20 @@ Full-stack calculator application demonstrating C# .NET and Angular integration 
 - **8:** Responsive design working on multiple screen sizes
 -  **9 (Optional):** Modal restyling - _Had to skip to focus more on backend, and I have experience in backend more than front-end but I am willing to learn._
 
+## Setup Instructions
+1. Clone the repo
+2. Open `CalculatorTest.slnx` in Visual Studio
+3. Right-click `Calculator.Api` → Set as Startup Project
+4. Press F5
+5. API runs at `https://localhost:7106`
+
+## Technologies
+- .NET 10.0 / C#
+- NUnit Testing
+- ASP.NET Core Web API
+- Angular 21 (Standalone)
+- Bootstrap 5
+
 ## Contact
 
 **Mohammed Bardawil**  
